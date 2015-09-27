@@ -5342,7 +5342,7 @@ hr {
 /* BANNER */
 #banner {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   min-height: 650px;
   font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -5353,7 +5353,7 @@ hr {
 }
 #banner .banner-bg {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   min-height: 650px;
 }
 @media (max-width: 768px) {
@@ -5399,7 +5399,7 @@ hr {
   color: #ffffff;
 }
 #banner .banner-bg .banner-bg-item {
-  height: 100vh;
+  height: 90vh;
   min-height: 650px;
   background-size: cover;
   background-position: center;
@@ -5651,7 +5651,7 @@ hr {
 /* ABOUT */
 .about {
   position: relative;
-  padding: 100px 0 60px 0;
+  padding: 75px 0 60px 0;
 }
 .about .feature {
   margin-bottom: 20px;
