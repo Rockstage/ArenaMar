@@ -1,0 +1,88 @@
+
+
+
+  <!-- Start Locations -->
+  <section class="locations">
+        
+    <!-- Start Locations-Top -->
+    <div class="locations-top">
+      <div id="location-map"></div>
+    </div>
+    <!-- End Locations-Top -->
+
+    <section class="about" style="padding: 50px 0; height: auto;">
+      <div class="container">
+        <div class="row">
+          <div class="preamble stars col-md-12">
+            <p>Hotel complex "Arena" – 4 stars is located in Golden sands resort on Bulgarian Black sea coast ,situated to the north from existing Perunika hotel. Both hotels are owned and managed by “J.V.V.AD” company. Hotel complex “Arena” is in distance 150 meters from the beach, 250 meters from center of resort, 15 km to the nearest city Varna and 23 km to the airport.</p>
+            <p>Explore the beauty of the Black Sea by visiting our</p>
+            <%= link_to "Gallery", gallery_path, class: 'btn btn-transparent-gray' %>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+
+
+    <!-- Start Locations-Bottom -->
+    <div class="locations-bottom" style="padding-top: 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="location-single">
+              <div class="offices">
+                <h3 class="title">
+                  Arena Mar Hotel
+                </h3>
+                <h5 class="sub-title">Headquarters</h5>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <ul class="location-details custom-list">
+                      <li>01, Example Street</li>    
+                      <li>Golden Sands Resort 1234</li>
+                      <li>Bulgaria</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <ul class="location-details custom-list">
+                      <li>Phone 1: +359 52 000 000</li>
+                      <li>Phone 2: +359 52 000 000</li>
+                      <li>Fax 1: +359 52 000 000</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <ul class="location-details custom-list">
+                      <li>Email: <a href="mailto:example@example.com">example@example.com</a></li>
+                      <li>Website: <%= link_to "www.example.com", "www.example.com" %></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="location-thumbnail">
+              <div class="overlay">
+                <%= image_tag("locations-thumbnail.jpg", class: 'img-responsive') %>
+                <div class="overlay-shadow">
+                  <div class="overlay-content">
+                    <ul class="buttons custom-list list-inline">
+                      <li><a href="#" class="btn btn-transparent-white">Call Us</a></li>
+                      <li><a href="#" class="btn btn-transparent-white">Mail Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Locations-Bottom -->
+
+  </section>
+  <!-- End Locations -->

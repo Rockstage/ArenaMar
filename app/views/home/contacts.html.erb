@@ -1,0 +1,109 @@
+  <!-- Start Contact-Form -->
+  <div class="container">
+    <div class="contact-box" style="padding: 160px 0 50px 0;">
+      <form action="#" class="contact-form default-form">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="preamble col-md-12">
+              <h3>Get in touch</h3>
+            </div>
+            <span class="select-box" title="hotel-type">
+              <select name="hotel-type" data-placeholder="- Select -">
+                <option>- Select -</option>
+                <option value="1" default="true">Reservation</option>
+                <option value="2">General Questions</option>
+                <option value="3">Other</option>
+              </select>
+            </span>
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="Your Name">
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="Your Phone">
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="Your Email">
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="Your Topic">
+          </div>
+          <div class="col-md-12">
+            <textarea placeholder="How we can help you"></textarea>
+          </div>
+          <div class="col-lg-md text-center">
+            <button class="btn btn-transparent-white">Send Message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End Contact-Form -->
+  
+  <!-- Start Contact-Map  -->
+  <div id="contact-map">
+  </div>
+  <!-- End Contact-Map -->
+
+  <!-- Start Contact -->
+  <div class="locations-bottom">
+      <div class="container" style="padding: 100px 0;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="location-single">
+              <div class="offices">
+                <h3 class="title">
+                  Contact us
+                </h3>
+                <h5 class="sub-title">Reception</h5>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <ul class="location-details custom-list">
+                      <li>01, Example Street</li>    
+                      <li>Golden Sands Resort 1234</li>
+                      <li>Bulgaria</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <ul class="location-details custom-list">
+                      <li>Phone 1: +359 52 000 000</li>
+                      <li>Phone 2: +359 52 000 000</li>
+                      <li>Fax 1: +359 52 000 000</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <ul class="location-details custom-list">
+                    	<hr />
+                      <li>Email: <a href="mailto:example@example.com">example@example.com</a></li>
+                      <li>Website: <%= link_to "www.example.com", "www.example.com" %></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="location-thumbnail">
+              <div class="overlay">
+                <%= image_tag("locations-thumbnail.jpg", class: 'img-responsive') %>
+                <div class="overlay-shadow">
+                  <div class="overlay-content">
+                    <ul class="buttons custom-list list-inline">
+                      <li><a href="#" class="btn btn-transparent-white">Call Us</a></li>
+                      <li><a href="#" class="btn btn-transparent-white">Mail Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Contact -->
+
+
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
