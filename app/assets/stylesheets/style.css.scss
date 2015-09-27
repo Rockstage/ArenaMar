@@ -5127,7 +5127,7 @@ hr {
 }
 #footer .footer-top {
   padding: 30px 0 0 0;
-  background: #333333 url(footer-bg.jpg) no-repeat center;
+  background: #333333 image-url("footer-bg.jpg") no-repeat center;
 }
 #footer .footer-top .logo-footer {
   padding: 0 0 30px 0;
@@ -5926,16 +5926,16 @@ hr {
   background: #172431;
 }
 .header-section.listing {
-  background-image: image-url("header-listing.jpg") no-repeat center;
+  background: image-url("header-listing.jpg") no-repeat center;
   background-size: cover;
 }
 .header-section.contact {
-  background-image: image-url("header-listing.jpg") no-repeat center;
+  background: image-url("header-listing.jpg") no-repeat center;
   background-size: cover;
 }
 .header-section.room {
   padding: 215px 0 160px 0;
-  background-image: image-url("header-room.jpg") no-repeat center;
+  background: image-url("header-room.jpg") no-repeat center;
   background-size: cover;
 }
 .header-section .title-section {
