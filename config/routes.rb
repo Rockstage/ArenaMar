@@ -4,10 +4,13 @@ Rails.application.routes.draw do
 
   resources :home
   get 'rooms', to: 'home#rooms'
+  get 'services', to: 'home#services'
   get 'gallery', to: 'home#gallery'
   get 'about_us', to: 'home#about_us'
   get 'location', to: 'home#location'
   get 'contacts', to: 'home#contacts'
+  get 'restaurants', to: 'home#restaurants'
+  get 'special_offers', to: 'home#special_offers'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

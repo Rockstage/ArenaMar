@@ -1,0 +1,76 @@
+
+
+
+  <!-- Start Footer -->
+  <footer id="footer">
+
+    <!-- Start Footer-Top -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 logo-footer">
+            <%= image_tag("logo.png", class: "img-responsive") %>
+          </div>
+          
+          
+          <div class="col-md-3 widget">
+            <h5 class="title">
+              Адрес
+            </h5>
+            <p><%= link_to "К.к. Златни пясъци, Варна", contacts_path, 'data-no-turbolink' => true, class: "contact-button" %></p>
+          </div>
+          <div class="col-md-3 widget">
+            <h5 class="title">
+              Телефон
+            </h5>
+            <p>Рецепция: <strong>+359 52 355 449</strong></p>
+            <p>Маркетинг: <strong>+359 878 73 75 22</strong></p>
+          </div>
+          <div class="col-md-3 widget">
+            <h5 class="title">
+              Електронна поща
+            </h5>
+            <p><a href="mailto:info@perunika.com">info@perunika.com</a></p>
+
+            <% if false %>
+            <div class="social">
+              <h5 class="title pull-left">
+                Stay in touch
+              </h5>
+              <ul class="custom-list list-inline pull-right">
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+              </ul>
+            </div>
+            <% end %>
+          </div>
+          <div class="col-md-3 widget">
+            <h5 class="title">
+              Запитвания
+            </h5>
+            <p><%= link_to "Форма за Контакт", contacts_path, 'data-no-turbolink' => true, class: "contact-button" %></p>
+          </div>
+          
+
+
+
+        </div>
+      </div>
+    </div>
+    <!-- End Footer-Top -->
+
+    <!-- Start Footer-Copyrights -->
+    <div class="footer-copyrights">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright 2015 © Arena-Mar Hotel. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer-Copyrights -->
+
+  </footer>
+  <!-- End Footer -->

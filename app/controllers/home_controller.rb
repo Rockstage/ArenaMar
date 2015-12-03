@@ -5,6 +5,10 @@ class HomeController < ApplicationController
 		
 	end
 
+	def services
+
+	end
+
 	def rooms
 		
 	end
@@ -23,6 +27,14 @@ class HomeController < ApplicationController
 
 	def contacts
 		
+	end
+
+	def restaurants
+
+	end
+
+	def special_offers
+
 	end
 
 end

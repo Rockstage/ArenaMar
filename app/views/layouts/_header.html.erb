@@ -5,19 +5,26 @@
       <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-12">
           <ul class="contact-info custom-list list-inline">
-            <li><i class="fa fa-phone"></i><span>+359 52 000 000</span></li>
-            <li><i class="fa fa-envelope"></i><span>example@example.com</span></li>
+            <li><i class="fa fa-phone"></i><span>+359 52 355 449</span></li>
+            <li><i class="fa fa-envelope"></i><span>info@perunika.com</span></li>
           </ul>
         </div>
         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-right pull-right">
+          <% if false %>
           <div class="contact-right">
+            
             <ul class="social custom-list list-inline">
               <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
               <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
             </ul>
+            
+            
             <div class="header-login">
+              
               <button class="login-toggle header-btn"><i class="fa fa-power-off"></i> Login</button>
+              
+              
               <div class="header-form">
                 <form action="#" class="default-form">
                   <p class="alert-message warning"><i class="ico fa fa-exclamation-circle"></i> All fields are required! <i class="fa fa-times close"></i></p>
@@ -38,19 +45,24 @@
                   </p>
                 </form>
               </div>
+              
             </div>
+
             <div class="header-language">
-              <button class="header-btn"><i class="fa fa-globe"></i>EN</button>
+              <button class="header-btn"><i class="fa fa-globe"></i>BG</button>
               <nav class="header-nav">
                 <ul class="custom-list">
-                  <li class="active"><a href="#">EN</a></li>
-                  <li><a href="#">BG</a></li>
+                  <li class="active"><a href="#">BG</a></li>
+                  <% if false %>
+                  <li><a href="#">EN</a></li>
                   <li><a href="#">DE</a></li>
                   <li><a href="#">FR</a></li>
+                  <% end %>
                 </ul>
               </nav>
             </div>
           </div>
+          <% end %>
         </div>
       </div>
     </div>
@@ -62,8 +74,10 @@
           <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12">
               <ul class="nav navbar-nav main-nav">
-                <li class=""><%= link_to "Home", root_path %></li>
-                <li><%= link_to "Rooms", rooms_path %></li>
+                <li class=""><%= link_to "За нас", root_path %></li>
+                <li><%= link_to "Услуги", services_path %></li>
+                <li><%= link_to "Стаи", rooms_path %></li>
+                
                 <% if false %>
                 <li class="has-submenu">
                   <a href="#">Rooms</a>
@@ -88,12 +102,15 @@
                   </ul>
                 </li>
                 <% end %>
-                <li><a href="gallery.html">Gallery</a></li>
+
+                
               </ul>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-12 col-sm-offset-0">
               <ul class="nav navbar-nav main-nav pull-right text-right">
                 
+
+                <% if false %>
                 <li class="has-submenu">
                   <%= link_to "About Us", "#" %>
                   <ul class="sub-menu custom-list">
@@ -105,6 +122,12 @@
                 </li>
                 <li><%= link_to "Location", location_path, 'data-no-turbolink' => true %></li>
                 <li><%= link_to "Contacts", contacts_path, 'data-no-turbolink' => true %></li>
+                <% end %>
+
+
+                <li><%= link_to "Ресторанти", restaurants_path %></li>
+                <li><%= link_to "Оферти", special_offers_path %></li>
+                <li><%= link_to "Контакти", contacts_path, 'data-no-turbolink' => true %></li>
               </ul>
             </div>
           </div>

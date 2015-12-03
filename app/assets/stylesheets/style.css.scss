@@ -5144,8 +5144,16 @@ hr {
 }
 #footer .footer-top .widget p {
   color: #ffffff;
-  opacity: .3;
+  opacity: 0.8;
 }
+#footer .footer-top .widget a {
+    color: #ffffff;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+}
+
 #footer .footer-top .widget.widget-news ul li:last-child a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -5342,7 +5350,7 @@ hr {
 /* BANNER */
 #banner {
   position: relative;
-  height: 90vh;
+  height: 80vh;
   min-height: 650px;
   font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -5353,7 +5361,7 @@ hr {
 }
 #banner .banner-bg {
   position: relative;
-  height: 90vh;
+  height: 80vh;
   min-height: 650px;
 }
 @media (max-width: 768px) {
@@ -5399,7 +5407,7 @@ hr {
   color: #ffffff;
 }
 #banner .banner-bg .banner-bg-item {
-  height: 90vh;
+  height: 80vh;
   min-height: 650px;
   background-size: cover;
   background-position: center;
@@ -5662,6 +5670,7 @@ hr {
 .about .feature .overlay-content {
   margin-top: -25px;
 }
+
 .overlay {
   position: relative;
   display: block;
@@ -7780,3 +7789,14 @@ hr {
     text-align: center;
   }
 }
+
+.restaurants ul {
+  margin-top: 50px;
+  list-style: none;
+  li {
+    padding: 30px;
+
+  }
+}
+
+
