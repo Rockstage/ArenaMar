@@ -23,5 +23,6 @@
 //= require jquery.matchHeight-min
 //= require modal
 //= require turbolinks
+//= require gmap3.min
 //= require_self
-//= require_tree .
+// require_tree .
