@@ -18,28 +18,28 @@
 <body>
 	
 
-<!-- Start Main-Wrapper -->
-<div id="main-wrapper">
-  <%= render template: 'layouts/_header' %>
+  <!-- Start Main-Wrapper -->
+  <div id="main-wrapper">
+    <%= render template: 'layouts/_header' %>
 
 
 
-  <!-- PAGE RENDER -->
+    <!-- PAGE RENDER -->
 
-  <%= yield %>
-
-
-  <%= render template: 'layouts/_footer' %>
-
-</div>
-<!-- End Main-Wrapper -->
+    <%= yield %>
 
 
+    <%= render template: 'layouts/_footer' %>
 
-	<!-- Scripts -->
-	
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+  </div>
+  <!-- End Main-Wrapper -->
+
+
+
+  	<!-- Scripts -->
+  	
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
   
 </body>
 </html>
