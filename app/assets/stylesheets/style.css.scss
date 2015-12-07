@@ -7643,6 +7643,7 @@ hr {
 /* CONTACT */
 #contact-map {
   width: 100%;
+  min-height: 90vh;
 }
 .container {
   position: relative;
@@ -7732,6 +7733,17 @@ hr {
 .container .contact-box .contact-form .btn {
   margin: 0 auto;
 }
+
+.container .contact-box .contact-form a {
+  display: block;
+  font-size: 1.5em;
+  padding-top: 25px;
+  color: white;
+  &:hover {
+    color: rgb(230,230,230);
+  }
+}
+
 @media (max-width: 992px) {
   .container .contact-box {
     right: 0;
