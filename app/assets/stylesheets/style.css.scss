@@ -2911,8 +2911,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: font-url('fontawesome-webfont.eot?v=4.2.0');
+  src: font-url('fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), font-url('fontawesome-webfont.woff?v=4.2.0') format('woff'), font-url('fontawesome-webfont.ttf?v=4.2.0') format('truetype'), font-url('fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -7810,5 +7810,22 @@ hr {
 
   }
 }
+
+.list-offers {
+  li a {
+    font-size: 1.2em;
+  }
+}
+
+.contact-us-button {
+  background-color: rgba(0,140,210,0.9) !important;
+  margin-top: 10px;
+  a {
+    color: white;
+  }
+}
+
+
+
 
 
