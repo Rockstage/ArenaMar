@@ -1,251 +1,264 @@
 
-  <!-- Start Banner -->
-  <section id="banner">
+<!-- Start Banner -->
+<section id="banner">
 
-    <div class="banner-bg">
-      <div class="banner-bg-item active"><%= image_tag("hotel_front_new.jpg") %></div>
-      <div class="banner-bg-item"><%= image_tag("hotel_pool_new.jpg") %></div>
+  <div class="banner-bg">
+    <div class="banner-bg-item active"><%= image_tag("hotel_front_new.jpg") %></div>
+    <div class="banner-bg-item"><%= image_tag("hotel_pool_new.jpg") %></div>
+  </div>
+
+  <div class="css-table">
+    <div class="css-table-cell">
+
+      <!-- Start Banner-Search -->
+      <% if false %>
+      <div class="banner-search">
+        <div class="container">
+            <div id="hero-tabs" class="banner-search-inner">
+              <ul class="custom-list tab-title-list clearfix">
+                <li class="tab-title active"><a href="#yachts">Hotel</a></li>
+                <li class="tab-title"><a href="#privjet">Resort</a></li>
+                <li class="tab-title"><a href="#luxcars">Private suites</a></li>
+                <li class="tab-title"><a href="#cartrans">Pools & Spa</a></li>
+              </ul>
+              <ul class="custom-list tab-content-list">
+
+                <!-- Start Hotel -->
+                <li class="tab-content active">
+                  <form action="#" class="default-form">
+                    <span class="arrival calendar">
+                      <input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                    <span class="departure calendar">
+                      <input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                    <span class="adults select-box">
+                      <select name="adults" data-placeholder="Adults">
+                        <option>Adults</option>
+                        <option value="1">1 adult</option>
+                        <option value="2">2 adults</option>
+                        <option value="3">3 adults</option>
+                        <option value="4">4 adults</option>
+                      </select>
+                    </span>
+                    <span class="children select-box">
+                      <select name="children" data-placeholder="Children">
+                        <option>Children</option>
+                        <option value="1">1 children</option>
+                        <option value="2">2 childrens</option>
+                        <option value="3">3 childrens</option>
+                        <option value="4">4 childrens</option>
+                      </select>
+                    </span>
+                    <span class="submit-btn">
+                      <button class="btn btn-transparent">Book Now</button>
+                      <a href="#" class="advanced">Advanced Search</a>
+                    </span>
+                  </form>
+                </li>
+                <!-- End Hotel -->
+
+                <!-- Start Resorts -->
+                <li class="tab-content">
+                  <form action="#" class="default-form">
+                    <span class="arrival calendar">
+                      <input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                    <span class="departure calendar">
+                      <input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                    <span class="adults select-box">
+                      <select name="adults" data-placeholder="Adults">
+                        <option>Adults</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                      </select>
+                    </span>
+                    <span class="children select-box">
+                      <select name="children" data-placeholder="Children">
+                        <option>Children</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                      </select>
+                    </span>
+                    <span class="submit-btn">
+                      <button class="btn btn-transparent">Book Now</button>
+                      <a href="#" class="advanced">Advanced Search</a>
+                    </span>
+                  </form>
+                </li>
+                <!-- End Resorts -->
+
+                <!-- Start Private Suites -->
+                <li class="tab-content">
+                  <form action="#" class="default-form">
+                    <span class="arrival calendar">
+                      <input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                    <span class="departure calendar">
+                      <input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                    <span class="adults select-box">
+                      <select name="adults" data-placeholder="Adults">
+                        <option>Adults</option>
+                        <option value="1">2 adults</option>
+                        <option value="2">3 adults</option>
+                        <option value="3">4 adults</option>
+                      </select>
+                    </span>
+                    <span class="children select-box">
+                      <select name="children" data-placeholder="Children">
+                        <option>Children</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                      </select>
+                    </span>
+                    <span class="submit-btn">
+                      <button class="btn btn-transparent">Book Now</button>
+                      <a href="#" class="advanced">Advanced Search</a>
+                    </span>
+                  </form>
+                </li>
+                <!-- End Private Suites -->
+
+                <!-- Start Bed & Breakfast -->
+                <li class="tab-content">
+                  <form action="#" class="default-form">
+                    <span class="arrival calendar">
+                      <input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                    <span class="departure calendar">
+                      <input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                    <span class="adults select-box">
+                      <select name="adults" data-placeholder="Adults">
+                        <option>Adults</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                      </select>
+                    </span>
+                    <span class="children select-box">
+                      <select name="children" data-placeholder="Children">
+                        <option>Children</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                      </select>
+                    </span>
+                    <span class="submit-btn">
+                      <button class="btn btn-transparent">Book Now</button>
+                      <a href="#" class="advanced">Advanced Search</a>
+                    </span>
+                  </form>
+                </li>
+                <!-- End Bed & Breakfast -->
+
+              </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Banner-Search -->
+      <% end %>
+
     </div>
+  </div>
+</section>
+<!-- End Banner -->
 
-    <div class="css-table">
-      <div class="css-table-cell">
+<!-- Start About -->
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="preamble stars col-md-12">
+        <h3>ЗА ХОТЕЛА</h3>
+        <p>Хотелски комплекс "Smartline Arena Mar" - 4 звезди се намира в курорта Златни пясъци на българското крайбрежие на Черно море и е разположен на север от съществуващия хотел Перуника. 
+        Хотел "Арена Мар" е на 150 метра от плажа, на 250 метра от центъра на курорта, на 15 км от 
+        най-близкия град - Варна, и на 23 км от летището.
+        </p>
+      </div>
 
-        <!-- Start Banner-Search -->
-        <% if false %>
-        <div class="banner-search">
-          <div class="container">
-              <div id="hero-tabs" class="banner-search-inner">
-                <ul class="custom-list tab-title-list clearfix">
-                  <li class="tab-title active"><a href="#yachts">Hotel</a></li>
-                  <li class="tab-title"><a href="#privjet">Resort</a></li>
-                  <li class="tab-title"><a href="#luxcars">Private suites</a></li>
-                  <li class="tab-title"><a href="#cartrans">Pools & Spa</a></li>
-                </ul>
-                <ul class="custom-list tab-content-list">
-
-                  <!-- Start Hotel -->
-                  <li class="tab-content active">
-                    <form action="#" class="default-form">
-                      <span class="arrival calendar">
-                        <input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                      <span class="departure calendar">
-                        <input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                      <span class="adults select-box">
-                        <select name="adults" data-placeholder="Adults">
-                          <option>Adults</option>
-                          <option value="1">1 adult</option>
-                          <option value="2">2 adults</option>
-                          <option value="3">3 adults</option>
-                          <option value="4">4 adults</option>
-                        </select>
-                      </span>
-                      <span class="children select-box">
-                        <select name="children" data-placeholder="Children">
-                          <option>Children</option>
-                          <option value="1">1 children</option>
-                          <option value="2">2 childrens</option>
-                          <option value="3">3 childrens</option>
-                          <option value="4">4 childrens</option>
-                        </select>
-                      </span>
-                      <span class="submit-btn">
-                        <button class="btn btn-transparent">Book Now</button>
-                        <a href="#" class="advanced">Advanced Search</a>
-                      </span>
-                    </form>
-                  </li>
-                  <!-- End Hotel -->
-
-                  <!-- Start Resorts -->
-                  <li class="tab-content">
-                    <form action="#" class="default-form">
-                      <span class="arrival calendar">
-                        <input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                      <span class="departure calendar">
-                        <input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                      <span class="adults select-box">
-                        <select name="adults" data-placeholder="Adults">
-                          <option>Adults</option>
-                          <option value="1">2</option>
-                          <option value="2">3</option>
-                          <option value="3">4</option>
-                        </select>
-                      </span>
-                      <span class="children select-box">
-                        <select name="children" data-placeholder="Children">
-                          <option>Children</option>
-                          <option value="1">2</option>
-                          <option value="2">3</option>
-                          <option value="3">4</option>
-                        </select>
-                      </span>
-                      <span class="submit-btn">
-                        <button class="btn btn-transparent">Book Now</button>
-                        <a href="#" class="advanced">Advanced Search</a>
-                      </span>
-                    </form>
-                  </li>
-                  <!-- End Resorts -->
-
-                  <!-- Start Private Suites -->
-                  <li class="tab-content">
-                    <form action="#" class="default-form">
-                      <span class="arrival calendar">
-                        <input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                      <span class="departure calendar">
-                        <input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                      <span class="adults select-box">
-                        <select name="adults" data-placeholder="Adults">
-                          <option>Adults</option>
-                          <option value="1">2 adults</option>
-                          <option value="2">3 adults</option>
-                          <option value="3">4 adults</option>
-                        </select>
-                      </span>
-                      <span class="children select-box">
-                        <select name="children" data-placeholder="Children">
-                          <option>Children</option>
-                          <option value="1">2</option>
-                          <option value="2">3</option>
-                          <option value="3">4</option>
-                        </select>
-                      </span>
-                      <span class="submit-btn">
-                        <button class="btn btn-transparent">Book Now</button>
-                        <a href="#" class="advanced">Advanced Search</a>
-                      </span>
-                    </form>
-                  </li>
-                  <!-- End Private Suites -->
-
-                  <!-- Start Bed & Breakfast -->
-                  <li class="tab-content">
-                    <form action="#" class="default-form">
-                      <span class="arrival calendar">
-                        <input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                      <span class="departure calendar">
-                        <input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                      <span class="adults select-box">
-                        <select name="adults" data-placeholder="Adults">
-                          <option>Adults</option>
-                          <option value="1">2</option>
-                          <option value="2">3</option>
-                          <option value="3">4</option>
-                        </select>
-                      </span>
-                      <span class="children select-box">
-                        <select name="children" data-placeholder="Children">
-                          <option>Children</option>
-                          <option value="1">2</option>
-                          <option value="2">3</option>
-                          <option value="3">4</option>
-                        </select>
-                      </span>
-                      <span class="submit-btn">
-                        <button class="btn btn-transparent">Book Now</button>
-                        <a href="#" class="advanced">Advanced Search</a>
-                      </span>
-                    </form>
-                  </li>
-                  <!-- End Bed & Breakfast -->
-
-                </ul>
+      
+      
+      <div class="col-md-3 col-sm-6 feature text-center">
+        <div class="overlay">
+          <%= image_tag("feature-pool.jpg", class: "img-responsive") %>
+          <div class="overlay-shadow">
+            <div class="overlay-content">
+              <%= link_to "Научете повече", services_path, class: 'btn btn-transparent-white' %>
             </div>
           </div>
         </div>
-        <!-- End Banner-Search -->
-        <% end %>
+        <h4>Услуги</h4>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6 feature text-center">
+        <div class="overlay">
+          <%= image_tag("feature-room.jpg", class: "img-responsive") %>
+          <div class="overlay-shadow">
+            <div class="overlay-content">
+              <%= link_to "Научете повече", rooms_path, class: 'btn btn-transparent-white' %>
+            </div>
+          </div>
+        </div>
+        <h4>Стаи</h4>
+
+      </div>
+
+     <div class="col-md-3 col-sm-6 feature text-center">
+        <div class="overlay">
+          <%= image_tag("feature-food.jpg", class: "img-responsive") %>
+          <div class="overlay-shadow">
+            <div class="overlay-content">
+              <%= link_to "Научете повече", restaurants_path, class: 'btn btn-transparent-white' %>
+            </div>
+          </div>
+        </div>
+        <h4>Ресторанти и барове</h4>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6 feature text-center">
+        <div class="overlay">
+          <%= image_tag("feature-entertainment.jpg", class: "img-responsive") %>
+          <div class="overlay-shadow">
+            <div class="overlay-content">
+              <%= link_to "Научете повече", special_offers_path, class: 'btn btn-transparent-white' %>
+            </div>
+          </div>
+        </div>
+        <h4>Специални Оферти</h4>
 
       </div>
     </div>
-  </section>
-  <!-- End Banner -->
+  </div>
+</section>
+<!-- End About -->
 
-  <!-- Start About -->
-  <section class="about">
-    <div class="container">
-      <div class="row">
-        <div class="preamble stars col-md-12">
-          <h3>ЗА ХОТЕЛА</h3>
-          <p>Хотелски комплекс "Smartline Arena Mar" - 4 звезди се намира в курорта Златни пясъци на българското крайбрежие на Черно море и е разположен на север от съществуващия хотел Перуника. 
-          Хотел "Арена Мар" е на 150 метра от плажа, на 250 метра от центъра на курорта, на 15 км от 
-          най-близкия град - Варна, и на 23 км от летището.
-          </p>
-        </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        
-        
-        <div class="col-md-3 col-sm-6 feature text-center">
-          <div class="overlay">
-            <%= image_tag("feature-pool.jpg", class: "img-responsive") %>
-            <div class="overlay-shadow">
-              <div class="overlay-content">
-                <%= link_to "Научете повече", services_path, class: 'btn btn-transparent-white' %>
-              </div>
-            </div>
-          </div>
-          <h4>Услуги</h4>
+  ga('create', 'UA-72755983-3', 'auto');
+  ga('send', 'pageview');
 
-        </div>
+</script>
 
-        <div class="col-md-3 col-sm-6 feature text-center">
-          <div class="overlay">
-            <%= image_tag("feature-room.jpg", class: "img-responsive") %>
-            <div class="overlay-shadow">
-              <div class="overlay-content">
-                <%= link_to "Научете повече", rooms_path, class: 'btn btn-transparent-white' %>
-              </div>
-            </div>
-          </div>
-          <h4>Стаи</h4>
 
-        </div>
-
-       <div class="col-md-3 col-sm-6 feature text-center">
-          <div class="overlay">
-            <%= image_tag("feature-food.jpg", class: "img-responsive") %>
-            <div class="overlay-shadow">
-              <div class="overlay-content">
-                <%= link_to "Научете повече", restaurants_path, class: 'btn btn-transparent-white' %>
-              </div>
-            </div>
-          </div>
-          <h4>Ресторанти и барове</h4>
-
-        </div>
-
-        <div class="col-md-3 col-sm-6 feature text-center">
-          <div class="overlay">
-            <%= image_tag("feature-entertainment.jpg", class: "img-responsive") %>
-            <div class="overlay-shadow">
-              <div class="overlay-content">
-                <%= link_to "Научете повече", special_offers_path, class: 'btn btn-transparent-white' %>
-              </div>
-            </div>
-          </div>
-          <h4>Специални Оферти</h4>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End About -->
 
 <% if false %>
   <!-- Start Testimonials -->
