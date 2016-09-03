@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   get 'contacts', to: 'home#contacts'
   get 'restaurants', to: 'home#restaurants'
   get 'special_offers', to: 'home#special_offers'
+
+  # i18n
+  get '/change_locale/:locale', to: 'settings#change_locale', as: :change_locale
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

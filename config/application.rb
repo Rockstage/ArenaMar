@@ -25,5 +25,10 @@ module Arenamar
     
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # I18n
+    I18n.available_locales = [:en, :bg]
+    config.i18n.default_locale = :en # set default locale to Russian
+
   end
 end

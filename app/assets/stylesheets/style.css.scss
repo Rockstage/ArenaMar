@@ -4697,8 +4697,11 @@ hr {
   }
 }
 #header .header-top .contact-info li {
-  padding: 0 0 0 21px;
-  border-right: 1px solid #ededed;
+  padding: 0 0 0 10px;
+  
+}
+#header .header-top .contact-info img {
+  height: 25px;
 }
 #header .header-top .contact-info li:first-child {
   padding: 0 25px 0 0;

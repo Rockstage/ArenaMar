@@ -1,4 +1,4 @@
-<!-- Start Header -->
+Start Header -->
 <header id="header">
   <div class="header-top">
     <div class="container">
@@ -12,22 +12,28 @@
         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-right pull-right">
           <ul class="contact-info custom-list list-inline">
             <li><i class="fa fa-envelope"></i><span>hotelarena@abv.bg</span></li>
+            <li><%= link_to image_tag("en.png"), change_locale_path(:en) %></li>
+            <li><%= link_to image_tag("bg.png"), change_locale_path(:bg) %></li>
           </ul>
-          <% if false %>
+
+
+          
           <div class="contact-right">
-            
+          
+            <% if false %>
+
             <ul class="social custom-list list-inline">
               <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
               <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
             </ul>
+
+            <% end %>
             
-            
+            <% if false %>
+
             <div class="header-login">
-              
               <button class="login-toggle header-btn"><i class="fa fa-power-off"></i> Login</button>
-              
-              
               <div class="header-form">
                 <form action="#" class="default-form">
                   <p class="alert-message warning"><i class="ico fa fa-exclamation-circle"></i> All fields are required! <i class="fa fa-times close"></i></p>
@@ -48,24 +54,28 @@
                   </p>
                 </form>
               </div>
-              
             </div>
+
+            <% end %>
+
+            <% if false %>
 
             <div class="header-language">
               <button class="header-btn"><i class="fa fa-globe"></i>BG</button>
               <nav class="header-nav">
                 <ul class="custom-list">
                   <li class="active"><a href="#">BG</a></li>
-                  <% if false %>
                   <li><a href="#">EN</a></li>
                   <li><a href="#">DE</a></li>
                   <li><a href="#">FR</a></li>
-                  <% end %>
                 </ul>
               </nav>
             </div>
-          </div>
-          <% end %>
+
+            <% end %>
+
+          </div><!-- contact-right -->
+
         </div>
       </div>
     </div>
@@ -77,9 +87,10 @@
           <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12">
               <ul class="nav navbar-nav main-nav">
-                <li class=""><%= link_to "За нас", root_path %></li>
-                <li><%= link_to "Услуги", services_path %></li>
-                <li><%= link_to "Стаи", rooms_path %></li>
+
+                <li><%= link_to t('menu.about'), root_path %></li>
+                <li><%= link_to t('menu.services'), services_path %></li>
+                <li><%= link_to t('menu.rooms'), rooms_path %></li>
                 
                 <% if false %>
                 <li class="has-submenu">
@@ -108,7 +119,9 @@
 
                 
               </ul>
+
             </div>
+
             <div class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-12 col-sm-offset-0">
               <ul class="nav navbar-nav main-nav pull-right text-right">
                 
@@ -128,9 +141,9 @@
                 <% end %>
 
 
-                <li><%= link_to "Ресторанти", restaurants_path %></li>
-                <li><%= link_to "Цени и Оферти", special_offers_path %></li>
-                <li><%= link_to "Контакти", contacts_path, 'data-no-turbolink' => true %></li>
+                <li><%= link_to t('menu.restaurants'), restaurants_path %></li>
+                <li><%= link_to t('menu.pricing'), special_offers_path %></li>
+                <li><%= link_to t('menu.contacts'), contacts_path, 'data-no-turbolink' => true %></li>
               </ul>
             </div>
           </div>
@@ -160,4 +173,4 @@
     </div>
   </div>
 </div>
-<!-- End Header-Logo -->
+<!-- End Header-Logo

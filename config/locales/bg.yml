@@ -20,17 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 # en:
-#   hello: "Hello world"
-#   header:
-# 	menu:
-# 		about: "About us"
-# 		services: "Services"
-# 		rooms: "Accomodations"
-# 		restaurants: "Restaurants"
-# 		pricing: "Pricing and offers"
-# 		contacts: "Contact us"
-
-# en:
 #   activerecord:
 #     attributes:
 #       article:
@@ -52,30 +41,26 @@
 #     new:
 #       title: "New article"
 
-en:
+
+bg:
   menu:
-    about: "About us"
-    services: "Services"
-    rooms: "Accomodation"
-    restaurants: "Restaurants"
-    pricing: "Pricing"
-    contacts: "Contact us"
+    about: "За нас"
+    services: "Услуги"
+    rooms: "Стаи"
+    restaurants: "Ресторанти"
+    pricing: "Цени и оферти"
+    contacts: "Контакти"
   footer:
     address:
-      title: "Address"
-      content: "Golden Sands Resort, Varna"
+      title: "Адрес"
+      content: "К.К. Златни Пясъци, Варна"
     phone:
-      title: "Phone Numbers"
-      phone1: "Reception"
-      phone2: "Marketing"
+      title: "Телефон"
+      phone1: "Рецепция"
+      phone2: "Маркетинг"
     email:
-      title: "Email Address"
+      title: "Електронна Поща"
     form:
-      title: "Reservations"
-      content: "Contact Form"
-    copyright: "Arena-Mar Hotel. All rights reserved."
-
-
-
-
-
+      title: "Запитвания"
+      content: "Форма за контакт"
+    copyright: "Хотел Арена Мар. Всички права запазени."

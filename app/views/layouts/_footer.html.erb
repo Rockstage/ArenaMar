@@ -15,20 +15,20 @@
           
           <div class="col-md-3 widget">
             <h5 class="title">
-              Адрес
+              <%= t('footer.address.title') %>
             </h5>
-            <p><%= link_to "К.к. Златни пясъци, Варна", contacts_path, 'data-no-turbolink' => true, class: "contact-button" %></p>
+            <p><%= link_to t('footer.address.content'), contacts_path, 'data-no-turbolink' => true, class: "contact-button" %></p>
           </div>
           <div class="col-md-3 widget">
             <h5 class="title">
-              Телефон
+              <%= t('footer.phone.title') %>
             </h5>
-            <p>Рецепция: <strong>+359 52 355 449</strong></p>
-            <p>Маркетинг: <strong>+359 878 737 531</strong></p>
+            <p><%= t('footer.phone.phone1') %>: <strong>+359 52 355 449</strong></p>
+            <p><%= t('footer.phone.phone2') %>: <strong>+359 878 737 531</strong></p>
           </div>
           <div class="col-md-3 widget">
             <h5 class="title">
-              Електронна поща
+              <%= t('footer.email.title') %>
             </h5>
             <p><a href="mailto:info@perunika.com">hotelarena@abv.bg</a></p>
 
@@ -47,9 +47,9 @@
           </div>
           <div class="col-md-3 widget">
             <h5 class="title">
-              Запитвания
+              <%= t('footer.form.title') %>
             </h5>
-            <p><%= link_to "Форма за Контакт", contacts_path, 'data-no-turbolink' => true, class: "contact-button" %></p>
+            <p><%= link_to t('footer.form.content'), contacts_path, 'data-no-turbolink' => true, class: "contact-button" %></p>
           </div>
           
 
@@ -65,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>Copyright 2016 © Arena-Mar Hotel. All rights reserved.</p>
+            <p>© 2016 <%= t('footer.copyright') %></p>
           </div>
         </div>
       </div>

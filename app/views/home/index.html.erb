@@ -182,11 +182,22 @@
   <div class="container">
     <div class="row">
       <div class="preamble stars col-md-12">
+        
+        <% if I18n.locale == :en %>
+
+        <h3>ABOUT THE HOTEL</h3>
+        <p>Modern, jovial and bright, situated in one of the loveliest Bulgarian sea resorts – Golden Sands  – the Arena Mar **** hotel offers virtually anything that you might wish: vicinity to the beach, delicious food, complete relaxation of the senses at the SpA and the indoor pool, unceasing amusement at the numerous clubs and bars… </p>
+
+        <% elsif I18n.locale == :bg %>
+
         <h3>ЗА ХОТЕЛА</h3>
         <p>Хотелски комплекс "Smartline Arena Mar" - 4 звезди се намира в курорта Златни пясъци на българското крайбрежие на Черно море и е разположен на север от съществуващия хотел Перуника. 
         Хотел "Арена Мар" е на 150 метра от плажа, на 250 метра от центъра на курорта, на 15 км от 
         най-близкия град - Варна, и на 23 км от летището.
         </p>
+
+        <% end %>
+
       </div>
 
       
