@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-12">
         <h3 class="title-section pull-left">
-          СТАИ
+          <%= t('menu.rooms') %>
         </h3>
       </div>
     </div>
@@ -16,9 +16,45 @@
   <div class="container">
     <div class="row">
       <div class="preamble col-md-12">
-        <h4>На Ваше разположение са стилни и луксозно обзаведени 188 двойни и 12 апартамента.</h4>
-        <p>Комфортно обзаведените стаи разполагат с централна климатизация, телевизор с плосък екран и кабелна телевизия, мини хладилник, телефон, безжичен интернет, сейф, баня с душ, сешоар, балкон. Като можете да избирате стая с изглед  към море / басейн, или с изглед към вътрешния двор / търговската алея.</p>
+        <% if I18n.locale == :en %>
 
+          <h4>Smartline Arena Mar comprises 200 luxurious and brightly furnished rooms.</h4>
+          <br/>
+          <p style="text-align:left;"><strong>Room types:</strong>  Double room (a total of appr. 23m2, including bathroom; living area – 14m2 ) with view to the commercial street, pool, or with partial sea view, for 2 adults +1 child or 3 adults.  Family room (x a total of 27,4 m2 including bathroom; size of the living area – 19,6m2) with view to the courtyard or to the commercial street for 3 or 4 adults, or 3 adults and 1 child.</p>
+          <br/>
+          <ul style="text-align:left;">
+            <li>Air Condition</li>
+            <li>Single bed  - 100/200cm</li>
+            <li>Extra bed type - sofa</li>
+            <li>Rooms have balcony</li>
+            <li>Rooms have baby cots (additional charge, upon request)</li>
+            <li>Cable TV</li>
+            <li>Telephone</li>
+            <li>Safe in the room (additional charge)</li>
+            <li>Fridge </li>
+            <li>Hair dryer</li>
+            <li>Shower </li>
+            <li>WC</li>
+          </ul>
+
+
+        <% elsif I18n.locale == :bg %>
+
+          <h4>Хотел Арена Мар**** предоставя за настаняване 200 луксозни, свежи стаи</h4>
+          <br/>
+          <p style="text-align:left;"><strong>Хотел Арена Мар**** предоставя за настаняване</strong> на своите гости общо 188 двойни стаи и 12 апартамента с изглед към басейна, търговската улица, морето или курортните алеи. Всички стаи имат просторни балкони, собствена баня / тоалетна (с душ). Стаите са оборудвани с:</p>
+          <br/>
+          <ul style="text-align:left;">
+            <li>Климатик</li>
+            <li>Минибар</li>
+            <li>Сейф</li>
+            <li>LCD Телевизор</li>
+            <li>Телефон</li>
+            <li>Сешоар в баните</li>
+            <li>В апартаментите - вана</li>
+          </ul>
+
+        <% end %>
       </div>
       <div class="listing-content col-md-9">
 
@@ -37,7 +73,7 @@
                 <header>
                   <div class="pull-left">
                     <h5 class="title">
-                      <a href="#">Двойна Стая</a>
+                      <a href="#"><%= t('rooms.2room') %></a>
                     </h5>
                     <ul class="tags custom-list list-inline pull-left">
                       <% if false %>
@@ -57,23 +93,23 @@
                   <div class="row">
                     <div class="col-md-4 col-sm-4">
                       <ul class="facilities-list custom-list">
-                        <li><i class="fa fa-leaf"></i><span>Климатик</span></li>
-                        <li><i class="fa fa-heart-o"></i><span>Топъл душ</span></li>
-                        <li><i class="fa fa-check-square-o"></i><span><strong>+1 </strong> легло</span></li>
+                        <li><i class="fa fa-leaf"></i><span><%= t('rooms.features.aircon') %></span></li>
+                        <li><i class="fa fa-heart-o"></i><span><%= t('rooms.features.shower') %></span></li>
+                        <li><i class="fa fa-check-square-o"></i><span><%= t('rooms.features.extrabed') %></span></li>
                       </ul>
                     </div>
                     <div class="col-md-4 col-sm-4">
                       <ul class="facilities-list custom-list">
-                        <li><i class="fa fa-female"></i><span>Room service</span></li>
-                        <li><i class="fa fa-key"></i><span>Платен сейф</span></li>
-                        <li><i class="fa fa-desktop"></i><span>LCD TV с кабелна</span></li>
+                        <li><i class="fa fa-female"></i><span><%= t('rooms.features.roomservice') %></span></li>
+                        <li><i class="fa fa-key"></i><span><%= t('rooms.features.safe') %></span></li>
+                        <li><i class="fa fa-desktop"></i><span><%= t('rooms.features.tv') %></span></li>
                       </ul>
                     </div>
                     <div class="col-md-4 col-sm-4">
                       <ul class="facilities-list custom-list">
-                        <li><i class="fa fa-globe"></i><span>Платен WIFI</span></li>
-                        <li><i class="fa fa-phone"></i><span>Телефон</span></li>
-                        <li><i class="fa fa-asterisk"></i><span>Хладилник</span></li>
+                        <li><i class="fa fa-globe"></i><span><%= t('rooms.features.wifi') %></span></li>
+                        <li><i class="fa fa-phone"></i><span><%= t('rooms.features.phone') %></span></li>
+                        <li><i class="fa fa-asterisk"></i><span><%= t('rooms.features.fridge') %></span></li>
                       </ul>
                     </div>
                   </div>
@@ -98,7 +134,7 @@
                 <header>
                   <div class="pull-left">
                     <h5 class="title">
-                      <a href="#">Апартамент</a>
+                      <a href="#"><%= t('rooms.Aroom') %></a>
                     </h5>
                     <ul class="tags custom-list list-inline pull-left">
                       <% if false %>
@@ -118,23 +154,23 @@
                   <div class="row">
                     <div class="col-md-4 col-sm-4">
                       <ul class="facilities-list custom-list">
-                        <li><i class="fa fa-leaf"></i><span>Климатик</span></li>
-                        <li><i class="fa fa-heart-o"></i><span>Топъл душ</span></li>
-                        <li><i class="fa fa-check-square-o"></i><span><strong>+1 </strong> легло</span></li>
+                        <li><i class="fa fa-leaf"></i><span><%= t('rooms.features.aircon') %></span></li>
+                        <li><i class="fa fa-heart-o"></i><span><%= t('rooms.features.shower') %></span></li>
+                        <li><i class="fa fa-check-square-o"></i><span><%= t('rooms.features.extrabed') %></span></li>
                       </ul>
                     </div>
                     <div class="col-md-4 col-sm-4">
                       <ul class="facilities-list custom-list">
-                        <li><i class="fa fa-female"></i><span>Room service</span></li>
-                        <li><i class="fa fa-key"></i><span>Платен сейф</span></li>
-                        <li><i class="fa fa-desktop"></i><span>LCD TV с кабелна</span></li>
+                        <li><i class="fa fa-female"></i><span><%= t('rooms.features.roomservice') %></span></li>
+                        <li><i class="fa fa-key"></i><span><%= t('rooms.features.safe') %></span></li>
+                        <li><i class="fa fa-desktop"></i><span><%= t('rooms.features.tv') %></span></li>
                       </ul>
                     </div>
                     <div class="col-md-4 col-sm-4">
                       <ul class="facilities-list custom-list">
-                        <li><i class="fa fa-globe"></i><span>Платен WIFI</span></li>
-                        <li><i class="fa fa-phone"></i><span>Телефон</span></li>
-                        <li><i class="fa fa-asterisk"></i><span>Хладилник</span></li>
+                        <li><i class="fa fa-globe"></i><span><%= t('rooms.features.wifi') %></span></li>
+                        <li><i class="fa fa-phone"></i><span><%= t('rooms.features.phone') %></span></li>
+                        <li><i class="fa fa-asterisk"></i><span><%= t('rooms.features.fridge') %></span></li>
                       </ul>
                     </div>
                   </div>
@@ -281,7 +317,7 @@
 
 
         <div class="special-offers sidebar">
-          <h5 class="title-section"><%= link_to "Цени и оферти", special_offers_path %></h5>
+          <h5 class="title-section"><%= link_to t('rooms.pricing'), special_offers_path %></h5>
           <% if false %>
           <div class="offers-content">
             
@@ -305,7 +341,7 @@
         
 
         <div class="special-offers sidebar contact-us-button">
-          <h5 class="title-section"><%= link_to "Направете запитване", contacts_path %></h5>
+          <h5 class="title-section"><%= link_to t('rooms.request'), contacts_path %></h5>
           <% if false %>
           <div class="offers-content">
             

@@ -187,6 +187,13 @@
 
         <h3>ABOUT THE HOTEL</h3>
         <p>Modern, jovial and bright, situated in one of the loveliest Bulgarian sea resorts – Golden Sands  – the Arena Mar **** hotel offers virtually anything that you might wish: vicinity to the beach, delicious food, complete relaxation of the senses at the SpA and the indoor pool, unceasing amusement at the numerous clubs and bars… </p>
+        <br/>
+        <br/>
+        <hr/>
+        <br/>
+        <br/>
+        <h4>Within Reach</h4>
+        <p style="text-align: left;"><strong>A wonderful combination</strong> of sandy beaches and woods, Golden Sands resort is cozily nestled in the lush vegetation of the ancient forest of the nature park bearing the same name. Few people know that the resort lies on almost the same latitude as the world-known French Riviera town of St. Tropez. Golden Sands is located only 17 km to the north of Varna where there is so much to see: historical and cultural monuments, museums, the oldest processed gold in the world dated 5000 years b.C, astonishing with the complexity of its geometric proportions, the Cathedral, the Roman Baths, many restaurants and  shops.  The medieval “Aladzha” monastery, carved into the rocks, offers an unforgettable performance in sound and lights at a walking distance from the resort. The lovely Euxinograd residence is very close to the resort as well. Within 60km there is the only stone desert in Europe – “Pobiti Kamani”; the biggest pre-historical village in Europe, located in Durankulak; the botanical garden in Balchik, Cape Kaliakra, an abundance of coastal areas, stunning in sceneries, flora and fauna.</p>
 
         <% elsif I18n.locale == :bg %>
 
@@ -195,23 +202,28 @@
         Хотел "Арена Мар" е на 150 метра от плажа, на 250 метра от центъра на курорта, на 15 км от 
         най-близкия град - Варна, и на 23 км от летището.
         </p>
+        <br/>
+        <br/>
+        <hr/>
+        <br/>
+        <br/>
+        <h4>В околностите</h4>
+        <p style="text-align: left;"><strong>Курортът Златни пясъци</strong> е прекрасно съчетание на златист плаж и сгушилите го гъсти, терасовидно спускащи се гори на едноименния природен парк. Малцина знаят, че Златни пясъци лежи на почти еднаква географска ширина с прочутия курортен град на френската Ривиера Сен Тропе. Разположен е на 17 км от град Варна, където могат да се посетят културни и исторически забележителности, първото обработено злато в света, датирано на 5000 години преди Христа, и поразяващо със сложността на геометричните си пропорции, Катедралния храм, Римските Tерми, много магазини и ресторанти. Съвсем близо до курортния комплекс се намират скалния Аладжа манастир, както и двореца Евксиноград. В обсег от 60 км от хотела са единствената каменна пустиня в Европа „Побити камъни“, уникалното праисторическо селище край Дуранкулак, ботаническата градина в Балчик, н. Калиакра, зашеметяващи с гледките, флората и фауната си крайморски местности, и мн. др.</p>
 
         <% end %>
 
       </div>
-
-      
       
       <div class="col-md-3 col-sm-6 feature text-center">
         <div class="overlay">
           <%= image_tag("feature-pool.jpg", class: "img-responsive") %>
           <div class="overlay-shadow">
             <div class="overlay-content">
-              <%= link_to "Научете повече", services_path, class: 'btn btn-transparent-white' %>
+              <%= link_to t('more'), services_path, class: 'btn btn-transparent-white' %>
             </div>
           </div>
         </div>
-        <h4>Услуги</h4>
+        <h4><%= t('index.services') %></h4>
 
       </div>
 
@@ -220,11 +232,11 @@
           <%= image_tag("feature-room.jpg", class: "img-responsive") %>
           <div class="overlay-shadow">
             <div class="overlay-content">
-              <%= link_to "Научете повече", rooms_path, class: 'btn btn-transparent-white' %>
+              <%= link_to t('more'), rooms_path, class: 'btn btn-transparent-white' %>
             </div>
           </div>
         </div>
-        <h4>Стаи</h4>
+        <h4><%= t('index.rooms') %></h4>
 
       </div>
 
@@ -233,11 +245,11 @@
           <%= image_tag("feature-food.jpg", class: "img-responsive") %>
           <div class="overlay-shadow">
             <div class="overlay-content">
-              <%= link_to "Научете повече", restaurants_path, class: 'btn btn-transparent-white' %>
+              <%= link_to t('more'), restaurants_path, class: 'btn btn-transparent-white' %>
             </div>
           </div>
         </div>
-        <h4>Ресторанти и барове</h4>
+        <h4><%= t('index.restaurants') %></h4>
 
       </div>
 
@@ -246,11 +258,11 @@
           <%= image_tag("feature-entertainment.jpg", class: "img-responsive") %>
           <div class="overlay-shadow">
             <div class="overlay-content">
-              <%= link_to "Научете повече", special_offers_path, class: 'btn btn-transparent-white' %>
+              <%= link_to t('more'), special_offers_path, class: 'btn btn-transparent-white' %>
             </div>
           </div>
         </div>
-        <h4>Специални Оферти</h4>
+        <h4><%= t('index.offers') %></h4>
 
       </div>
     </div>

@@ -74,8 +74,27 @@ en:
       title: "Reservations"
       content: "Contact Form"
     copyright: "Arena-Mar Hotel. All rights reserved."
-
-
+  index:
+    services: "Services"
+    rooms: "Accomodation"
+    restaurants: "Restaurants & Bars"
+    offers: "Special Offers"
+  more: "Learn more"
+  rooms:
+    2room: "Double room"
+    Aroom: "Family room"
+    features:
+      aircon: "Air Condition"
+      shower: "Hot shower"
+      extrabed: "+1 bed"
+      roomservice: "Room service"
+      safe: "Paid Safe"
+      tv: "Cable TV"
+      wifi: "Paid WIFI"
+      phone: "Telephone"
+      fridge: "Fridge"
+    pricing: "Pricing and offers"
+    request: "Make a request"
 
 
 
