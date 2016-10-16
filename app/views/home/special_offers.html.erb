@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-12">
         <h3 class="title-section pull-left">
-          Специални Оферти
+          <%= t("menu.pricing") %>
         </h3>
       </div>
     </div>
@@ -15,6 +15,28 @@
 <section class="about">
     <div class="container">
       <div class="row">
+
+        <% if I18n.locale == :en %>
+
+          <div class="preamble stars col-md-12">
+            <h3>Pricelist</h3>
+            <p>Download pricelist in PDF:</p>
+            <hr/>
+            <ul class="list-unstyled list-offers">
+              <li><a href="https://drive.google.com/uc?export=download&id=0B_X_WXowNUKiWldaWU5sYlZUZ0k">Pricelist season 2016 (EUR)</a></li><hr/>
+            </ul>
+          </div>
+	      	<div class="preamble stars col-md-12">
+		        <h3>Special Offers</h3>
+            <p>Download special offers in PDF:</p>
+            <hr/>
+            <ul class="list-unstyled list-offers">
+              <li><a href="https://drive.google.com/uc?export=download&id=0B_X_WXowNUKia1pid2xBTXRoRlU">Easter Holidays</a></li><hr/>
+            </ul>
+      		</div>
+
+        <% elsif I18n.locale == :bg %>
+
           <div class="preamble stars col-md-12">
             <h3>Ценоразпис</h3>
             <p>Свалете ценоразпис в PDF:</p>
@@ -24,14 +46,17 @@
               <li><a href="https://drive.google.com/uc?export=download&id=0B_X_WXowNUKiWldaWU5sYlZUZ0k">Pricelist season 2016 (EUR)</a></li><hr/>
             </ul>
           </div>
-	      	<div class="preamble stars col-md-12">
-		        <h3>Специални Оферти</h3>
+          <div class="preamble stars col-md-12">
+            <h3>Специални Оферти</h3>
             <p>Свалете офертите в PDF:</p>
             <hr/>
             <ul class="list-unstyled list-offers">
               <li><a href="https://drive.google.com/uc?export=download&id=0B_X_WXowNUKia1pid2xBTXRoRlU">Великденски празници</a></li><hr/>
             </ul>
-      		</div>
+          </div>
+
+        <% end %>
+
   		</div>
 	</div>
 </section>

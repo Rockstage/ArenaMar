@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-12">
         <h3 class="title-section pull-left">
-          УСЛУГИ
+          <%= t("menu.services") %>
         </h3>
         <% if false %>
         <ul class="breadcrumbs custom-list list-inline pull-right">
@@ -22,32 +22,35 @@
   <section class="supertabs">
     <div class="container">
       <div class="row">
+
+        <% if I18n.locale == :en %>
         
         <!-- Start Tab-Navigation -->
         <div class="col-md-4 tab-navigation">
           <ul class="custom-list">
             <li class="active">
-              <a data-toggle="tab" href="#spa">
-                <h5 class="title">СПА И УЕЛНЕС</h5>
-                
+              <a data-toggle="tab" href="#pool">
+                <h5 class="title">Pool & Beach</h5>
               </a>
             </li>
             <li>
-              <a data-toggle="tab" href="#sport">
-                <h5 class="title">СПОРТ</h5>
-                
+              <a data-toggle="tab" href="#internet">
+                <h5 class="title">Internet</h5>
               </a>
             </li>
             <li>
-              <a data-toggle="tab" href="#entertainment">
-                <h5 class="title">РАЗВЛЕЧЕНИЕ</h5>
-                
+              <a data-toggle="tab" href="#kids">
+                <h5 class="title">Kids' facilities</h5>
               </a>
             </li>
             <li>
-              <a data-toggle="tab" href="#seminars">
-                <h5 class="title">СЕМИНАРИ И КОНФЕРЕНЦИИ</h5>
-                
+              <a data-toggle="tab" href="#sports">
+                <h5 class="title">Sports, Relaxation & Entertainment</h5>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#info">
+                <h5 class="title">Additional information</h5>
               </a>
             </li>
           </ul>
@@ -56,40 +59,211 @@
 
         <!-- Start Tab-Content -->
         <div class="col-md-8 tab-content">
-          <div id="spa" class="tab-pane fade in active">
+          <div id="pool" class="tab-pane fade in active">
             <%= image_tag("supertabs-3.jpg") %>
             <header>
-              <h5 class="title">СПА И УЕЛНЕС</h5>
-              <h6 class="subtitle">Спа и уелнес</h6>
+              <h5 class="title">Pool & Beach</h5>
+              <h6 class="subtitle"></h6>
             </header>
-            <p></p>
+            <p>Smartline Arena Mar's garden-like outdoor area features a pool, kids' pool, sun loungers and parasols as well as a pool bar. Sun loungers and parasols are available free of charge at the pool.
+              <br/>
+              <br/>- Pool (22x 6.8m2) 1.2 m deep with an integrated kid’s pool 0,65m deep.
+              <br/>- Kids' pool (appr. 5x5) and 0.67m deep.  Integrated in indoor pool.
+              <br/>- Indoor pool (9.5x5) in the hotel spa –  Open from 9am till 5pm.
+              <br/>- Sun loungers and parasols at the pool – free of charge.
+              <br/>- Pool/ beach Towels – free of charge.
+            </p>
           </div>
-          <div id="sport" class="tab-pane fade">
-            <%= image_tag("supertabs-3.jpg") %>
-            <header>
-              <h5 class="title">СПОРТ</h5>
-              <h6 class="subtitle">Спорт</h6>
-            </header>
-            <p></p>
-          </div>
-          <div id="entertainment" class="tab-pane fade">
-            <%= image_tag("supertabs-3.jpg") %>
-            <header>
-              <h5 class="title">РАЗВЛЕЧЕНИЕ</h5>
-              <h6 class="subtitle">Развлечение</h6>
-            </header>
-            <p></p>
-          </div>
-          <div id="seminars" class="tab-pane fade">
+          <div id="internet" class="tab-pane fade">
             <%= image_tag("supertabs.jpg") %>
             <header>
-              <h5 class="title">СЕМИНАРИ И КОНФЕРЕНЦИИ</h5>
-              <h6 class="subtitle">Семинари и конференции</h6>
+              <h5 class="title">Internet</h5>
+              <h6 class="subtitle"></h6>
             </header>
-            <p></p>
+            <p><strong>Free Wi-Fi in the lobby</br>Wi-Fi in room</strong> (additional charge)</p>
+          </div>
+          <div id="kids" class="tab-pane fade">
+            <%= image_tag("supertabs.jpg") %>
+            <header>
+              <h5 class="title">Kids' facilities</h5>
+              <h6 class="subtitle"></h6>
+            </header>
+            <p>Smartline Arena Mar provides tons of activities and fun for the youngest guests at the mini club (4-12 years) and organizes activities such as mini disco. The hotel offers a kids’ pool.
+            <br/>
+            <br/>- Mini club
+            <br/>- Mini disco
+          </p>
+          </div>
+          <div id="sports" class="tab-pane fade">
+            <%= image_tag("supertabs-3.jpg") %>
+            <header>
+              <h5 class="title">Sports, Relaxation & Entertainment</h5>
+              <h6 class="subtitle"></h6>
+            </header>
+            <p>
+              The hotel organizes various sports activities for those who want to stay fit during their holiday, such as aqua aerobics, aerobics and water basketball. In addition, the hotel has a gym. <br/><br/> For those who are seeking relaxation, the hotel's modern spa center offers massage treatments, an indoor pool with a kids' section, sauna, steam bath, turkish bath, jaccuzi,  as well as a beauty salon (treatments at additional charge). Smartline Arena Mar's animation team organizes activities during the day and night time, such as shows, contests, awards, parties with DJ, group games and dance lessons.
+              </br>
+              </br>- <strong>Gym, Indoor pool, Sauna, Turkish bath, Steam bath, Jaccuzi, Spa treatments </strong>(at additional charge)<strong>, beauty salon with hairdresser, Aqua gymnastics, Table tennis - free of charge, Water basketball, Darts - free of charge</strong>
+            </p>
+          </div>
+          <div id="info" class="tab-pane fade">
+            <%= image_tag("supertabs.jpg") %>
+            <header>
+              <h5 class="title">Additional Information</h5>
+              <h6 class="subtitle"></h6>
+            </header>
+            <p>            
+              - Private Parking in the hotel area, extra charge<br/>
+              - Built year 2015<br/>
+              - Number of buildings - 1<br/>
+              - Number of floors 5<br/>
+              - Elevator(s) 3<br/>
+              - Number of rooms 200<br/>
+              - Reception <br/>
+              - Minimarket – across the street<br/>
+              - Laundry service – at an extra charge<br/>
+              - On call doctor <br/>
+              - Currency exchange
+            </p>
           </div>
         </div>
         <!-- End Tab-Content -->
+
+
+        <% elsif I18n.locale == :bg %>
+
+
+
+
+        <!-- Start Tab-Navigation -->
+        <div class="col-md-4 tab-navigation">
+          <ul class="custom-list">
+            <li class="active">
+              <a data-toggle="tab" href="#pool">
+                <h5 class="title">Външен басейн</h5>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#pool2">
+                <h5 class="title">Вътрешен басейн</h5>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#spa">
+                <h5 class="title">Спа център</h5>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#sports">
+                <h5 class="title">Спорт и забавление</h5>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#info">
+                <h5 class="title">Услуги в хотела</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Tab-Navigation -->
+
+        <!-- Start Tab-Content -->
+        <div class="col-md-8 tab-content">
+          <div id="pool" class="tab-pane fade in active">
+            <%= image_tag("supertabs-3.jpg") %>
+            <header>
+              <h5 class="title">Външен басейн</h5>
+              <h6 class="subtitle">smartline Арена Мар**** се грижи за незабравимото изживяване на гостите си от всички възрасти, през  всички сезони на годината</h6>
+            </header>
+            <p><strong>Външен басейн</strong>
+              <br/>с дълбочина около 1,3м и размери 22мx6,8м, с детска секция с дълбочина 0,65м и лагуна
+              <br/>- Работно време: 08:00 – 17:00
+            </p>
+          </div>
+          <div id="pool2" class="tab-pane fade">
+            <%= image_tag("supertabs-3.jpg") %>
+            <header>
+              <h5 class="title">Вътрешен басейн</h5>
+              <h6 class="subtitle">smartline Арена Мар**** се грижи за незабравимото изживяване на гостите си от всички възрасти, през  всички сезони на годината</h6>
+            </header>
+            <p><strong>Вътрешен басейн - Отопляем (28-30&#8451; през зимния период)</strong>
+              <br/>удобно разположен на територията на спа центъра. С размери приблизително 9,5x5м и максимална дълбочина 1,70м . Детски басейн, интегриран в големия с дължина 5м и дълбочина 0,67м
+              <br/>- Работно време: 08:00 – 17:00
+            </p>
+          </div>
+          <div id="spa" class="tab-pane fade">
+            <%= image_tag("supertabs-3.jpg") %>
+            <header>
+              <h5 class="title">Спа център</h5>
+              <h6 class="subtitle">smartline Арена Мар**** се грижи за незабравимото изживяване на гостите си от всички възрасти, през  всички сезони на годината</h6>
+            </header>
+            <p>Поглезете се с някой от специално разработените от нашите опитни специалисти Спа ритуали, подмладяващи, тонизиращи и хидратиращи терапии за лице; отслабващи, детоксикиращи и антицелулитни терапии за тяло, масажи, и др. Налични в Спа центъра са още:
+            <br/>- Сауна
+            <br/>- Хамам
+            <br/>- Джакузи
+            <br/>- Парна баня
+            <br/>- Шоково ведро
+            <br/>- Стая за релакс
+            <br/>- Салон за красота - прическа, маникюр, кола-маска, подхранваща грижа за скалпа, и др.
+            <br/>Работмо време: 08:00 - 18:00
+
+          </p>
+          </div>
+          <div id="sports" class="tab-pane fade">
+            <%= image_tag("supertabs.jpg") %>
+            <header>
+              <h5 class="title">Спорт и забавление</h5>
+              <h6 class="subtitle">За още по-активна почивка и по-разнообразна програма на гостите, сме предвидили</h6>
+            </header>
+            <p>
+              <strong>Фитнес център</strong>
+              <br/>разположен на територията на Спа центъра и отворен в работното време на Спа центъра
+              <br/>
+
+              <strong>Билярд</strong>
+              <br/>ниво -1, до ресторант А-ла-карт. Срещу заплащане на рецепция
+              <br/>
+
+              <strong>Футбол на маса</strong>
+              <br/>ниво -1, до ресторант А-ла-карт. Срещу заплащане на рецепция
+              <br/>
+
+              <strong>Тенис на маса</strong>
+              <br/>безплатно за гостите на хотела, на лоби терасата
+              <br/>
+
+              <strong>Анимационна програма</strong>
+              <br/>през летния сезон, включваща различни игри – аеробика, водна аеробика, воден баскетбол, дартс
+              <br/>
+
+              <strong>За децата</strong>
+              <br/>Мини клуб и детска площадка, мини диско през летния сезон
+              <br/>
+            </p>
+          </div>
+          <div id="info" class="tab-pane fade">
+            <%= image_tag("supertabs.jpg") %>
+            <header>
+              <h5 class="title">Услуги в хотела</h5>
+              <h6 class="subtitle">Платени</h6>
+            </header>
+            <p>            
+              - Паркинг<br/>
+              - Сейф (в стаята)<br/>
+              - Бебешка кошара<br/>
+              - Почасово гледане на дете<br/>
+              - Лекар<br/>
+              - Интернет в стаята<br/>
+              - Резервации за ресторанти, кина, театри, оперни представления и др. Персоналът на рецепция с радост ще Ви съдейства да резервирате маса в ресторант, да запазите места в театър или за представление, а също така ще Ви даде информация за събития, забележителности, и др.<br/>
+              - Телефонни разговори<br/>
+              - Пране и гладене<br/>
+              - Плажни хавлии<br/>
+            </p>
+          </div>
+        </div>
+        <!-- End Tab-Content -->
+
+        <% end %>
 
       </div>
     </div>

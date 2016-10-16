@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-12">
         <h3 class="title-section pull-left">
-          Ресторанти и барове
+          <%= t('menu.restaurants') %>
         </h3>
       </div>
     </div>
@@ -16,15 +16,70 @@
     <div class="container">
       <div class="row">
 	      	<div class="preamble stars col-md-12">
-		        <h3>Ресторанти и Барове</h3>
-		        <div class="restaurants">
-		        	<ul>
-		        		<li><h5>Арена Мар основен ресторант</h5></li>
-		        		<li><h5>Арена Мар а-ла карт ресторант</h5></li>
-		        		<li><h5>Лоби бар</h5><p>освежаващи коктейли, безалкохолни напитки, български алкохолни напитки, наливна бира, топли напитки</p></li>
-		        		<li><h5>Бар басейн</h5><p>освежаващи коктейли, безалкохолни напитки, български алкохолни напитки, наливна бира, топли напитки</p></li>
-		        	</ul>
-		        </div>
+            <div class="restaurants">
+              <% if I18n.locale == :en %>
+              
+    		        <h3>Food & Beverage</h3>
+  		        
+                <p>At smartline Arena Mar the guests can choose between two restaurants for dinner, either the varied buffet restaurant or the ‘Arena Mar’ à-la-carte restaurant  with an beautiful open air courtyard. The perfect end of an exciting the day is sipping a cool drink at the lobby bar, or enjoying one  at the pool bar.</p>
+
+                <ul>
+                  <li><h5>Pool bar</h5></li>
+                  <li><h5>Lobby bar</h5></li>
+                  <li><h5>Restaurant</h5><p>Table reservation in the à la carte restaurant required</p></li>
+                </ul>
+              
+                <hr/>
+                <br/>
+                <h3>All Inclusive</h3>
+
+  		        	<ul>
+  		        		<li>Breakfast (7.30am-10am), lunch (noon-2pm) and dinner (6pm-9pm) served in the buffet restaurant</li>
+  		        		<li>Water, soft drinks, local beer and wine served at lunch and dinner</li>
+  		        		<li>Water, soft drinks, local beer and wine in the pool bar (10am-6pm) and in the lobby bar (10am-11pm)</li>
+  		        		<li>Snacks (3pm-5pm)  served at the main restaurant or pool bar only</li>
+                  <li>Fresh fruit and ice cream (10am-11am and 2pm-3pm)</li>
+  		        	</ul>
+              <% elsif I18n.locale == :bg %>
+
+                <h3>Ресторанти и Барове</h3>
+
+                <p>Хотел smartline Arena Mar**** предлага обслужване на „Ол инклузив“, нощувка със закуска или полупансион (закуска с вечеря). В основния ресторант през летния сезон се организират тематични вечери и музикална програма. </p>
+
+                <ul>
+                  <li>
+                    <h5><i>Основен ресторант</i></h5>
+                    <p>обслужване на бюфет</p>
+                    <p>Закуска: 7:30 - 10:00</p>
+                    <p>Обяд: 12:00 - 14:00</p>
+                    <p>Вечеря: 18:00 - 21:00</p>
+                  </li>
+                  <li>
+                    <h5><i>Ресторант a-la-carte</i></h5>
+                    <p>с изход към красив английски двор с шадраван – с предварителна резервация и срещу допълнително заплащане</p>
+                    <p>Отворен за вечеря: 18:00 - 21:00</p>
+                  </li>
+                  <li>
+                    <h5><i>Лоби бар</i></h5>
+                    <p>с места за сядане на слънчева тераса</p>
+                    <p>Отворен: 10:00 - 23:00</p>
+                  </li>
+                  <li>
+                    <h5><i>Бар басейн</i></h5>
+                    <p>разхладете се с някой от нашите коктейли, фрешове</p>
+                    <p>Отворен: 10:00 - 18:00</p>
+                    <p>Плодове и сладоледи: 10:00 - 11:00 и 14:00 - 15:00</p>
+                  </li>
+                  <li>
+                    <h5><i>Руум сервиз</i></h5>
+                    <p>може да поръчате английска или континентална закуска, омлети, салати, сандвичи и специалитети, напитки, да бъдат доставени в стаята Ви</p>
+                    <p>Работно време: 07:30 - 21:00</p>
+                    <p>Телефон за поръчки: 800</p>
+                  </li>
+                </ul>
+
+              <% end %>
+            </div>
       		</div>
   		</div>
 	</div>
