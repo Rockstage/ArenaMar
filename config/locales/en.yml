@@ -95,6 +95,9 @@ en:
       fridge: "Fridge"
     pricing: "Pricing and offers"
     request: "Make a request"
+  buttons:
+    previous: "Previous"
+    next: "next"
 
 
 

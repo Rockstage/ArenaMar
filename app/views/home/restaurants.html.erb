@@ -81,9 +81,33 @@
               <% end %>
             </div>
       		</div>
+          
+          <% if false %>
+          <%= link_to image_tag("member1.jpg", "data-imagelightbox" => "g"), image_path('hotel_pool_new.jpg') %>
+          <a href="<%= image_path('hotel_pool_new.jpg') %>" data-imagelightbox="g"><img src="<%= image_path('member1.jpg') %>" alt=""></a>
+          <a href="<%= image_path('hotel_front_new.jpg') %>" data-imagelightbox="g"><img src="<%= image_path('member1.jpg') %>" alt=""></a>
+          <% end %>
+
+          
+
+          <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item"><%= image_tag('member1.jpg') %></div>
+            <div class="item"><%= image_tag('member1.jpg') %></div>
+            <div class="item"><%= image_tag('member1.jpg') %></div>
+            <div class="item"><%= image_tag('member1.jpg') %></div>
+            <div class="item"><%= image_tag('member1.jpg') %></div>
+            <div class="item"><%= image_tag('member1.jpg') %></div>
+          </div>
+          <div class="customNavigation">
+            <a class="btn prev"><</a>
+            <a class="btn next">></a>
+          </div>
+
   		</div>
 	</div>
 </section>
+
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

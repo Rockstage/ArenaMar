@@ -85,3 +85,6 @@ bg:
       fridge: "Хладилник"
     pricing: "Цени и оферти"
     request: "Направете запитване"
+  buttons:
+    previous: "Назад"
+    next: "Напред"
