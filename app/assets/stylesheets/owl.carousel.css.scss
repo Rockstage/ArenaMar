@@ -106,3 +106,170 @@
 	  	margin-top: 570px;
 	}
 }
+
+#owl-demo .image {
+	min-height: 350px;
+	min-width: 350px;
+	background-size: cover;
+	background-position: center;
+
+	&.room1 {
+		background: image-url('room1.jpg');
+	}
+	&.room2 {
+		background: image-url('room2.jpg');
+	}
+	&.room3 {
+		background: image-url('room3.jpg');
+	}
+
+
+	&.food1 {
+		background: image-url('food1.jpg');
+	}
+	&.food2 {
+		background: image-url('food2.jpg');
+	}
+	&.food3 {
+		background: image-url('food3.jpg');
+	}
+	&.food4 {
+		background: image-url('food4.jpg');
+	}
+	&.food6 {
+		background: image-url('food6.jpg');
+	}
+	&.food7 {
+		background: image-url('food7.jpg');
+	}
+	&.food8 {
+		background: image-url('food8.jpg');
+	}
+	&.food9 {
+		background: image-url('food9.jpg');
+	}
+	&.food10 {
+		background: image-url('food10.jpg');
+	}
+	&.food11 {
+		background: image-url('food11.jpg');
+	}
+	&.food12 {
+		background: image-url('food12.jpg');
+	}
+	&.food13 {
+		background: image-url('food13.jpg');
+	}
+	&.food14 {
+		background: image-url('food14.jpg');
+	}
+	&.food15 {
+		background: image-url('food15.jpg');
+	}
+
+
+	&.service1 {
+		background: image-url('service1.jpg');
+	}
+	&.service2 {
+		background: image-url('service2.jpg');
+	}
+	&.service3 {
+		background: image-url('service3.jpg');
+	}
+	&.service4 {
+		background: image-url('service4.jpg');
+	}
+	&.service5 {
+		background: image-url('service5.jpg');
+	}
+	&.service6 {
+		background: image-url('service6.jpg');
+	}
+	&.service7 {
+		background: image-url('service7.jpg');
+	}
+	&.service8 {
+		background: image-url('service8.jpg');
+	}
+	&.service9 {
+		background: image-url('service9.jpg');
+	}
+	&.service10 {
+		background: image-url('service10.jpg');
+	}
+	&.service11 {
+		background: image-url('service11.jpg');
+	}
+	&.service12 {
+		background: image-url('service12.jpg');
+	}
+	&.service13 {
+		background: image-url('service13.jpg');
+	}
+	&.service14 {
+		background: image-url('service14.jpg');
+	}
+	&.service15 {
+		background: image-url('service15.jpg');
+	}
+	&.service16 {
+		background: image-url('service16.jpg');
+	}
+	&.service17 {
+		background: image-url('service17.jpg');
+	}
+	&.service18 {
+		background: image-url('service18.jpg');
+	}
+	&.service19 {
+		background: image-url('service19.jpg');
+	}
+	&.service20 {
+		background: image-url('service20.jpg');
+	}
+	&.service21 {
+		background: image-url('service21.jpg');
+	}
+
+}
+
+#banner .image {
+	height: 100%;
+	
+	background-size: cover !important;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&.intro1 {
+		background: image-url('intro1.jpg');
+	}
+	&.intro2 {
+		background: image-url('intro2.jpg');
+	}
+	&.intro3 {
+		background: image-url('intro3.jpg');
+	}
+	&.intro4 {
+		background: image-url('intro4.jpg');
+	}
+	&.intro5 {
+		background: image-url('intro5.jpg');
+	}
+	&.intro6 {
+		background: image-url('intro6.jpg');
+	}
+	&.intro7 {
+		background: image-url('intro7.jpg');
+	}
+	&.intro8 {
+		background: image-url('intro8.jpg');
+	}
+	&.intro9 {
+		background: image-url('intro9.jpg');
+	}
+}
+
+
+
+
