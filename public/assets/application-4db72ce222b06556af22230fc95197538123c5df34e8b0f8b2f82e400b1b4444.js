@@ -705,7 +705,7 @@ $(document).ready(function() {
   var owl = $("#owl-demo");
  
   owl.owlCarousel({
-  	// autoPlay: 3000, //Set AutoPlay to 3 seconds
+  	  autoPlay: 3000, //Set AutoPlay to 3 seconds
  
       items : 2,
       itemsDesktop : [1000,2], //5 items between 1000px and 901px
