@@ -107,11 +107,12 @@
 	}
 }
 
+
+
 #owl-demo .image {
-	min-height: 350px;
-	min-width: 350px;
-	background-size: cover;
-	background-position: center;
+	min-height: 380px;
+	width: 100%;
+	max-width: 700px;
 
 	&.room1 {
 		background: image-url('room1.jpg');
@@ -165,6 +166,9 @@
 	}
 	&.food15 {
 		background: image-url('food15.jpg');
+	}
+	&.food16 {
+		background: image-url('food16.jpg');
 	}
 
 
@@ -231,6 +235,12 @@
 	&.service21 {
 		background: image-url('service21.jpg');
 	}
+	&.service22 {
+		background: image-url('service22.jpg');
+	}
+
+	background-size: cover !important;
+	background-position: center !important;
 
 }
 
