@@ -11569,6 +11569,11 @@ hr {
 .contact-us-button a {
   color: white;
 }
+
+/* line 7836, /Users/George/Documents/WebDev/Projects/arenamar/app/assets/stylesheets/style.css.scss */
+.booking {
+  background: rgba(255, 255, 255, 0.8);
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
