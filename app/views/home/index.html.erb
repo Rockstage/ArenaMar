@@ -187,16 +187,17 @@
 <section class="about">
   <div class="container">
     <div class="row">
-      <div class="booking" style="padding: 20px; width: 380px; height: 270px; position: relative; margin: -270px auto 0 auto;">
-      <% if I18n.locale == :en %>
-        <iframe title="Dynamic Packaging Bulgaria" id="kitt-iframe" src="#" data-url="https://dpb.kittbg.com/public/online-booking/search/hotel?apiKey=9545fedb-5a03-11e4-88d7-448a5ba02513&languageId=1&hotel=1208&form_action=https://arenamartesting.herokuapp.com/booking&form_target=_parent" style="width: 100%;min-height: 260px; height: 260px !important; overflow-x: hidden;border: none;"><a href="https://travelfinder.bg/" title="Dynamic Packaging Bulgaria" target="_blank">Dynamic Packaging Bulgaria</a></iframe>
-        <script type="application/ld+json">{"@context": "https://schema.org","@type": "Product","description": "","name": "Dynamic Packaging Bulgaria","url": "https://travelfinder.bg/","image": "https://travelfinder.bg/travelfinder_logo.png"}</script>
-        <script src="https://dpb.kittbg.com/public/js/dpb.js"></script>
-      <% elsif I18n.locale == :bg %>
-        <iframe title="Dynamic Packaging Bulgaria" id="kitt-iframe" src="#" data-url="https://dpb.kittbg.com/public/online-booking/search/hotel?apiKey=9545fedb-5a03-11e4-88d7-448a5ba02513&languageId=1&hotel=1208&form_action=https://arenamartesting.herokuapp.com/booking&form_target=_parent" style="width: 100%;min-height: 260px; overflow-x: hidden;border: none;"><a href="https://travelfinder.bg/" title="Dynamic Packaging Bulgaria" target="_blank">Dynamic Packaging Bulgaria</a></iframe>
-        <script type="application/ld+json">{"@context": "https://schema.org","@type": "Product","description": "","name": "Dynamic Packaging Bulgaria","url": "https://travelfinder.bg/","image": "https://travelfinder.bg/travelfinder_logo.png"}</script>
-        <script src="https://dpb.kittbg.com/public/js/dpb.js"></script>
-      <% end %>
+      <div class="booking" style="padding: 20px; width: 380px; height: 450px; position: absolute; z-index: 5; top: -270px; margin-left: auto; left: 0; margin-right: auto; right: 0;">
+        <% if I18n.locale == :en %>
+          <iframe title="Dynamic Packaging Bulgaria" id="kitt-iframe" src="#" data-url="https://dpb.kittbg.com/public/online-booking/search/hotel?apiKey=9545fedb-5a03-11e4-88d7-448a5ba02513&languageId=1&hotel=1208&form_action=https://arenamartesting.herokuapp.com/booking&form_target=_parent" style="width: 100%;min-height: 260px; position: relative; z-index: 6; overflow-x: hidden;border: none;"><a href="https://travelfinder.bg/" title="Dynamic Packaging Bulgaria" target="_blank">Dynamic Packaging Bulgaria</a></iframe>
+          <script type="application/ld+json">{"@context": "https://schema.org","@type": "Product","description": "","name": "Dynamic Packaging Bulgaria","url": "https://travelfinder.bg/","image": "https://travelfinder.bg/travelfinder_logo.png"}</script>
+          <script src="https://dpb.kittbg.com/public/js/dpb.js"></script>
+        <% elsif I18n.locale == :bg %>
+          <iframe title="Dynamic Packaging Bulgaria" id="kitt-iframe" src="#" data-url="https://dpb.kittbg.com/public/online-booking/search/hotel?apiKey=9545fedb-5a03-11e4-88d7-448a5ba02513&languageId=1&hotel=1208&form_action=https://arenamartesting.herokuapp.com/booking&form_target=_parent" style="width: 100%;min-height: 260px; position: relative; z-index: 6; overflow-x: hidden;border: none;"><a href="https://travelfinder.bg/" title="Dynamic Packaging Bulgaria" target="_blank">Dynamic Packaging Bulgaria</a></iframe>
+          <script type="application/ld+json">{"@context": "https://schema.org","@type": "Product","description": "","name": "Dynamic Packaging Bulgaria","url": "https://travelfinder.bg/","image": "https://travelfinder.bg/travelfinder_logo.png"}</script>
+          <script src="https://dpb.kittbg.com/public/js/dpb.js"></script>
+        <% end %>
+        <div class="booking-bg" style="background: rgba(255,255,255,0.8); position: absolute; width: 100%; height: 270px; top: 0; left: 0;"></div>
       </div>
       <div class="preamble stars col-md-12">
         
