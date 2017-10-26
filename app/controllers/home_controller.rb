@@ -37,4 +37,8 @@ class HomeController < ApplicationController
 
 	end
 
+	def booking
+
+	end
+
 end

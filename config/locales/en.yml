@@ -54,12 +54,13 @@
 
 en:
   menu:
-    about: "About us"
+    about: "About"
     services: "Services"
-    rooms: "Accomodation"
+    rooms: "Rooms"
     restaurants: "Restaurants"
     pricing: "Pricing"
     contacts: "Contact us"
+    booking: "Book"
   footer:
     address:
       title: "Address"
