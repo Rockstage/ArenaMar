@@ -50,7 +50,7 @@ bg:
     restaurants: "Ресторанти"
     pricing: "Цени и оферти"
     contacts: "Контакти"
-    booking: "Резервирай"
+    booking: "Резервации"
   footer:
     address:
       title: "Адрес"
