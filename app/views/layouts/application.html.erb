@@ -41,6 +41,20 @@
   	
   	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false?libraries=places&key=AIzaSyA5UpV0vLU3Iuo_LaCxyHh9YHiPD2DDRSM" type="text/javascript"></script>
-  
+    <!-- begin Free Call code -->
+    <script type="text/javascript">
+    (function() {
+      var dg_scr = document.createElement('script'); dg_scr.type = 'text/javascript'; dg_scr.async = true;
+      dg_scr.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'track.freecallinc.com/freecall.js';
+      dg_scr.onload = function(){
+    try {
+      deskGod.track(44573, 43573);
+    } catch(err){ }
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dg_scr, s);
+    })();
+    </script>
+    <!-- end Free Call inc code -->
 </body>
 </html>
