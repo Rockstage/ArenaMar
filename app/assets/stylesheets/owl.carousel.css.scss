@@ -123,7 +123,12 @@
 	&.room3 {
 		background: image-url('room3.jpg');
 	}
-
+	&.room4 {
+		background: image-url('room4.jpg');
+	}
+	&.room5 {
+		background: image-url('room5.png');
+	}
 
 	&.food1 {
 		background: image-url('food1.jpg');
@@ -136,6 +141,9 @@
 	}
 	&.food4 {
 		background: image-url('food4.jpg');
+	}
+	&.food5 {
+		background: image-url('food5.jpg');
 	}
 	&.food6 {
 		background: image-url('food6.jpg');
