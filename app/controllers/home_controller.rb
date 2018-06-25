@@ -41,4 +41,12 @@ class HomeController < ApplicationController
 
 	end
 
+	def cookiepolicy
+
+	end
+
+	def privacy
+
+	end
+
 end

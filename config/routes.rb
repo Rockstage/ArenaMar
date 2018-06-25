@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'restaurants', to: 'home#restaurants'
   get 'special_offers', to: 'home#special_offers'
   get 'booking', to: 'home#booking'
+  get 'cookiepolicy', to: 'home#cookiepolicy'
+  get 'privacy', to: 'home#privacy'
 
   # i18n
   get '/change_locale/:locale', to: 'settings#change_locale', as: :change_locale

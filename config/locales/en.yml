@@ -61,7 +61,10 @@ en:
     pricing: "Pricing"
     contacts: "Contact us"
     booking: "Booking"
+    cookie: "Cookie Policy"
+    privacy: "Privacy Policy"
   footer:
+    contact: "Contact us"
     address:
       title: "Address"
       content: "9007 Golden Sands, Varna, Bulgaria"
@@ -75,6 +78,8 @@ en:
       title: "Reservations"
       content: "Contact Form"
     copyright: "Arena-Mar Hotel. All rights reserved."
+    policies:
+      title: "Policies and Personal Data"
   index:
     services: "Services"
     rooms: "Accomodation"

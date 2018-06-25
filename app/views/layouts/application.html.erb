@@ -18,6 +18,31 @@
   <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
 
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#edeff5",
+        "text": "#838391"
+      },
+      "button": {
+        "background": "#4b81e8"
+      }
+    },
+    "position": "bottom-left",
+    "content": {
+      "message": "Този уебсайт използва бисквитки (\"Cookies\") с цел подобравяне на качеството на предлаганите услуги. Научете повече в нашата ",
+      "dismiss": "Приемам",
+      "link": "Политика за бисквитки",
+      "href": "/cookiepolicy"
+    }
+  })});
+  </script>
+
 </head>
 <body>
 	

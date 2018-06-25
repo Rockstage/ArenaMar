@@ -15,24 +15,29 @@
           
           <div class="col-md-3 widget">
             <h5 class="title">
+              <%= t('footer.policies.title') %>
+            </h5>
+            <p><%= link_to t('menu.privacy'), privacy_path %></p>
+            <p><%= link_to t('menu.cookie'), cookiepolicy_path %></p>
+          </div>
+
+          <div class="col-md-3 widget">
+            <h5 class="title">
               <%= t('footer.address.title') %>
             </h5>
             <p><%= link_to t('footer.address.content'), contacts_path, 'data-no-turbolink' => true, class: "contact-button" %></p>
           </div>
+
           <div class="col-md-3 widget">
             <h5 class="title">
-              <%= t('footer.phone.title') %>
+              <%= t('footer.contact') %>
             </h5>
             <p><%= t('footer.phone.phone1') %>: <strong>+359 52 355 449</strong></p>
             <p><%= t('footer.phone.phone2') %>: <strong>+359 878 737 531</strong></p>
-          </div>
-          <div class="col-md-3 widget">
-            <h5 class="title">
-              <%= t('footer.email.title') %>
-            </h5>
             <p><a href="mailto:info@perunika.com">hotelarena@abv.bg</a></p>
+          </div>
 
-            <% if false %>
+          <% if false %>
             <div class="social">
               <h5 class="title pull-left">
                 Stay in touch
@@ -44,7 +49,8 @@
               </ul>
             </div>
             <% end %>
-          </div>
+            
+
           <div class="col-md-3 widget">
             <h5 class="title">
               <%= t('footer.form.title') %>
