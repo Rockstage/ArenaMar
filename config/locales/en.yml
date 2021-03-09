@@ -80,6 +80,9 @@ en:
     copyright: "Arena-Mar Hotel. All rights reserved."
     policies:
       title: "Policies and Personal Data"
+    eu:
+      title: "European Operational Programme"
+      link1: "Innovation and Competitiveness"
   index:
     services: "Services"
     rooms: "Accomodation"

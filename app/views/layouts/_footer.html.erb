@@ -11,8 +11,6 @@
           <div class="col-md-12 logo-footer">
             <%= image_tag("logo.png", class: "img-responsive") %>
           </div>
-          
-          
           <div class="col-md-3 widget">
             <h5 class="title">
               <%= t('footer.policies.title') %>
@@ -23,9 +21,9 @@
 
           <div class="col-md-3 widget">
             <h5 class="title">
-              <%= t('footer.address.title') %>
+              <%= t('footer.eu.title') %>
             </h5>
-            <p><%= link_to t('footer.address.content'), contacts_path, 'data-no-turbolink' => true, class: "contact-button" %></p>
+          <p><%= link_to t('footer.eu.link1'), "https://drive.google.com/uc?export=download&id=18y1NMpjRVmyePUaOG5pF01796-jZ7pbP" %></p>
           </div>
 
           <div class="col-md-3 widget">
@@ -35,6 +33,7 @@
             <p><%= t('footer.phone.phone1') %>: <strong>+359 52 355 449</strong></p>
             <p><%= t('footer.phone.phone2') %>: <strong>+359 878 737 531</strong></p>
             <p><a href="mailto:info@perunika.com">hotelarena@abv.bg</a></p>
+            <p><%= link_to t('footer.address.content'), contacts_path, 'data-no-turbolink' => true, class: "contact-button" %></p>
           </div>
 
           <% if false %>
@@ -71,7 +70,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>© 2018 <%= t('footer.copyright') %></p>
+            <p>© 2021 <%= t('footer.copyright') %></p>
           </div>
         </div>
       </div>

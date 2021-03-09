@@ -26,6 +26,8 @@ gem 'rails-i18n', '~> 4.0.0'
 
 gem 'js_cookie_rails'
 
+gem 'ffi', '1.15.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

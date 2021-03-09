@@ -54,7 +54,7 @@ GEM
     debug_inspector (0.0.3)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.9.23)
+    ffi (1.15.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.5)
@@ -168,6 +168,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.1.0)
+  ffi (= 1.15.0)
   jbuilder (~> 2.0)
   jquery-rails
   js_cookie_rails
@@ -187,4 +188,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.16.2
+   1.17.3
