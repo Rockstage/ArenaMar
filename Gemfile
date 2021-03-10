@@ -30,6 +30,8 @@ gem 'ffi', '1.15.0'
 
 gem 'rspec-rails'
 
+gem 'webpacker'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
