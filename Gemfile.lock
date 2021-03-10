@@ -100,6 +100,8 @@ GEM
     nio4r (2.5.7)
     nokogiri (1.11.1-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.1-x86_64-linux)
+      racc (~> 1.4)
     pg (0.21.0)
     pry (0.13.1)
       coderay (~> 1.1)
@@ -203,6 +205,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   coffee-rails
